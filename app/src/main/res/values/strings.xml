@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Labyrinth</string>
+    <string name="rm_2">RM 2</string>
+    <string name="m_2">M 2</string>
+    <string name="lm_2">LM 2</string>
+    <string name="rm_1">RM 1</string>
+    <string name="m_1">M 1</string>
+    <string name="lm_1">LM 1</string>
+    <string name="r">R</string>
+    <string name="lp_2">LP 2</string>
+    <string name="p_2">P 2</string>
+    <string name="c">C</string>
+    <string name="p_1">P 1</string>
+    <string name="l">L</string>
+    <string name="rp_1">RP 1</string>
+    <string name="rp_2">RP 2</string>
+    <string name="lp_1">LP 1</string>
+
+</resources>
