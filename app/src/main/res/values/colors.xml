@@ -11,11 +11,12 @@
     <color name="yellow">#FFFF00</color>
 
     <color name="black">#000000</color>
-    <color name="b_gray">#3F3F3F</color>
-    <color name="m_gray">#7F7F7F</color>
-    <color name="w_gray">#BFBFBF</color>
-    <color name="white">#FFFFFF</color>
+    <color name="b_gray">#333333</color>
+    <color name="m_gray">#666666</color>
+    <color name="w_gray">#999999</color>
+    <color name="white">#CCCCCC</color>
 
+    <color name="bg_white">#FFFFFF</color>
     <color name="magenta">#FF00FF</color>
 
 

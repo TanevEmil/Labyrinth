@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".RainbowActivity"
     android:orientation="vertical">
 
         <LinearLayout
@@ -14,28 +14,28 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/buttonLP2"
+                android:id="@+id/_button18"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/lp_2"
-                android:background="@drawable/lp2" />
+                android:background="@drawable/_lp2" />
 
             <Button
-                android:id="@+id/buttonP2"
+                android:id="@+id/_buttonP2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/p_2"
-                android:background="@drawable/p2" />
+                android:background="@drawable/_p2" />
 
             <Button
-                android:id="@+id/buttonRP2"
+                android:id="@+id/_buttonRP2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/rp_2"
-                android:background="@drawable/rp2" />
+                android:background="@drawable/_rp2" />
         </LinearLayout>
 
         <LinearLayout
@@ -45,28 +45,28 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/buttonLP1"
+                android:id="@+id/_buttonLP1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/lp_1"
-                android:background="@drawable/lp1" />
+                android:background="@drawable/_lp1" />
 
             <Button
-                android:id="@+id/buttonP1"
+                android:id="@+id/_buttonP1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/p_1"
-                android:background="@drawable/p1" />
+                android:background="@drawable/_p1" />
 
             <Button
-                android:id="@+id/buttonRP1"
+                android:id="@+id/_buttonRP1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/rp_1"
-                android:background="@drawable/rp1" />
+                android:background="@drawable/_rp1" />
         </LinearLayout>
 
         <LinearLayout
@@ -76,28 +76,28 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/buttonL"
+                android:id="@+id/_buttonL"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/l"
-                android:background="@drawable/l" />
+                android:background="@drawable/_l" />
 
             <Button
-                android:id="@+id/buttonC"
+                android:id="@+id/_buttonC"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/c"
-                android:background="@drawable/c" />
+                android:background="@drawable/_c" />
 
             <Button
-                android:id="@+id/buttonR"
+                android:id="@+id/_buttonR"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/r"
-                android:background="@drawable/r" />
+                android:background="@drawable/_r" />
         </LinearLayout>
 
         <LinearLayout
@@ -107,28 +107,28 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/buttonLM1"
+                android:id="@+id/_buttonLM1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/lm_1"
-                android:background="@drawable/lm1" />
+                android:background="@drawable/_lm1" />
 
             <Button
-                android:id="@+id/buttonM1"
+                android:id="@+id/_button26"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/m_1"
-                android:background="@drawable/m1" />
+                android:background="@drawable/_m1" />
 
             <Button
-                android:id="@+id/buttonRM1"
+                android:id="@+id/_buttonRM1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/rm_1"
-                android:background="@drawable/rm1" />
+                android:background="@drawable/_rm1" />
         </LinearLayout>
 
         <LinearLayout
@@ -138,27 +138,27 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/buttonLM2"
+                android:id="@+id/_buttonLM2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/lm_2"
-                android:background="@drawable/lm2" />
+                android:background="@drawable/_lm2" />
 
             <Button
-                android:id="@+id/buttonM2"
+                android:id="@+id/_buttonM2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/m_2"
-                android:background="@drawable/m2" />
+                android:background="@drawable/_m2" />
 
             <Button
-                android:id="@+id/buttonRM2"
+                android:id="@+id/_buttonRM2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="@string/rm_2"
-                android:background="@drawable/rm2" />
+                android:background="@drawable/_rm2" />
         </LinearLayout>
     </LinearLayout>
