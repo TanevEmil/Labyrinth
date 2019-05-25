@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RainbowActivity"
+    tools:context=".DownActivity"
     android:orientation="vertical">
 
         <LinearLayout
@@ -14,28 +14,28 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/_buttonLP2"
+                android:id="@+id/buttonLP2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/_lp_2"
-                android:background="@drawable/_lp2" />
+                android:text="@string/d_lp_2"
+                android:background="@drawable/lp2" />
 
             <Button
-                android:id="@+id/_buttonP2"
+                android:id="@+id/buttonP2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/_p_2"
+                android:text="@string/d_p_2"
                 android:background="@drawable/_p2" />
 
             <Button
-                android:id="@+id/_buttonRP2"
+                android:id="@+id/buttonRP2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/_rp_2"
-                android:background="@drawable/_rp2" />
+                android:text="@string/d_rp_2"
+                android:background="@drawable/rp2" />
         </LinearLayout>
 
         <LinearLayout
@@ -45,59 +45,28 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/_buttonLP1"
+                android:id="@+id/buttonLP1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/_lp_1"
-                android:background="@drawable/_lp1" />
+                android:text="@string/d_lp_1"
+                android:background="@drawable/lp1" />
 
             <Button
-                android:id="@+id/_buttonP1"
+                android:id="@+id/buttonP1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/_p_1"
-                android:background="@drawable/_p1" />
-
-            <Button
-                android:id="@+id/_buttonRP1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/_rp_1"
-                android:background="@drawable/_rp1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/_buttonL"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/_l"
-                android:background="@drawable/_l" />
-
-            <Button
-                android:id="@+id/_buttonC"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/_c"
+                android:text="@string/d_p_1"
                 android:background="@drawable/_c" />
 
             <Button
-                android:id="@+id/_buttonR"
+                android:id="@+id/buttonRP1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/_r"
-                android:background="@drawable/_r" />
+                android:text="@string/d_rp_1"
+                android:background="@drawable/rp1" />
         </LinearLayout>
 
         <LinearLayout
@@ -107,27 +76,27 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/_buttonLM1"
+                android:id="@+id/buttonL"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/_lm_1"
+                android:text="@string/d_l"
                 android:background="@drawable/_lm1" />
 
             <Button
-                android:id="@+id/_buttonM1"
+                android:id="@+id/buttonC"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/_m_1"
+                android:text="@string/d_c"
                 android:background="@drawable/_m1" />
 
             <Button
-                android:id="@+id/_buttonRM1"
+                android:id="@+id/buttonR"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/_rm_1"
+                android:text="@string/d_r"
                 android:background="@drawable/_rm1" />
         </LinearLayout>
 
@@ -138,27 +107,58 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/_buttonLM2"
+                android:id="@+id/buttonLM1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/_lm_2"
-                android:background="@drawable/_lm2" />
+                android:text="@string/d_lm_1"
+                android:background="@drawable/lm1" />
 
             <Button
-                android:id="@+id/_buttonM2"
+                android:id="@+id/buttonM1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/_m_2"
+                android:text="@string/d_m_1"
                 android:background="@drawable/_m2" />
 
             <Button
-                android:id="@+id/_buttonRM2"
+                android:id="@+id/buttonRM1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/_rm_2"
-                android:background="@drawable/_rm2" />
+                android:text="@string/d_rm_1"
+                android:background="@drawable/rm1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonLM2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/d_lm_2"
+                android:background="@drawable/lm2" />
+
+            <Button
+                android:id="@+id/buttonM2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/d_m_2"
+                android:background="@drawable/m2" />
+
+            <Button
+                android:id="@+id/buttonRM2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/d_rm_2"
+                android:background="@drawable/rm2" />
         </LinearLayout>
     </LinearLayout>

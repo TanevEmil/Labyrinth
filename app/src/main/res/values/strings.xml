@@ -1,24 +1,68 @@
 <resources>
     <string name="app_name">Labyrinth</string>
 
-    <string name="lp_2">&lt;^^</string>
-    <string name="p_2">^^</string>
-    <string name="rp_2">^^&gt;</string>
+    <string name="_lp_2"></string>
+    <string name="_p_2">^^\n[ 1023 ]</string>
+    <string name="_rp_2"></string>
 
-    <string name="lp_1">&lt;^</string>
-    <string name="p_1">^</string>
-    <string name="rp_1">^&gt;</string>
+    <string name="_lp_1">&lt;\n[ 768 ]</string>
+    <string name="_p_1">^</string>
+    <string name="_rp_1">&gt;\n[ 895 ]</string>
 
-    <string name="l">&lt;</string>
-    <string name="c">+</string>
-    <string name="r">&gt;</string>
+    <string name="_l">--</string>
+    <string name="_c">[ 767 ]</string>
+    <string name="_r">--</string>
 
-    <string name="lm_1">&lt;v</string>
-    <string name="m_1">v</string>
-    <string name="rm_1">v&gt;</string>
+    <string name="_lm_1">&lt;\n[ 639 ]</string>
+    <string name="_m_1">v</string>
+    <string name="_rm_1">&gt;\n[ 767 ]</string>
 
-    <string name="lm_2">&lt;vv</string>
-    <string name="m_2">vv</string>
-    <string name="rm_2">vv&gt;</string>
+    <string name="_lm_2"></string>
+    <string name="_m_2">vv\n[ 512 ]</string>
+    <string name="_rm_2"></string>
+
+
+
+    <string name="u_lp_2">^^\n[ 511 ]</string>
+    <string name="u_p_2"></string>
+    <string name="u_rp_2">^^\n[ 1023 ]</string>
+
+    <string name="u_lp_1">^</string>
+    <string name="u_p_1">^^\n[ 1023 ]</string>
+    <string name="u_rp_1">^</string>
+
+    <string name="u_l">&lt;</string>
+    <string name="u_c">^</string>
+    <string name="u_r">&gt;</string>
+
+    <string name="u_lm_1">v</string>
+    <string name="u_m_1">\?</string>
+    <string name="u_rm_1">v</string>
+
+    <string name="u_lm_2">vv\n[ 0 ]</string>
+    <string name="u_m_2">v</string>
+    <string name="u_rm_2">vv\n[ 512 ]</string>
+
+
+
+    <string name="d_lp_2">^^</string>
+    <string name="d_p_2">^</string>
+    <string name="d_rp_2">^^</string>
+
+    <string name="d_lp_1">^</string>
+    <string name="d_p_1">\?</string>
+    <string name="d_rp_1">^</string>
+
+    <string name="d_l">&lt;</string>
+    <string name="d_c">v</string>
+    <string name="d_r">&gt;</string>
+
+    <string name="d_lm_1">v</string>
+    <string name="d_m_1">vv</string>
+    <string name="d_rm_1">v</string>
+
+    <string name="d_lm_2">vv</string>
+    <string name="d_m_2"></string>
+    <string name="d_rm_2">vv</string>
 
 </resources>

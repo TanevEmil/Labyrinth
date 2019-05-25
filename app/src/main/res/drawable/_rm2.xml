@@ -3,9 +3,9 @@
     <item>
         <shape android:shape="rectangle">
             <!-- background -->
-            <solid android:color="@color/bg_white" />
+            <solid android:color="@color/magenta" />
             <!-- border -->
-            <stroke android:width="4dp" android:color="@color/blue" />
+            <stroke android:width="4dp" android:color="@color/magenta" />
         </shape>
     </item>
 </selector>
