@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DownActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/backgroundDown">
 
         <LinearLayout
             android:layout_width="match_parent"

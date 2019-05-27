@@ -5,6 +5,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import de.tanev.labyrinth.model.BinarySearch;
+import de.tanev.labyrinth.model.Renderer;
+import de.tanev.labyrinth.model.renderer.Down;
+import de.tanev.labyrinth.model.renderer.Up;
 
 public class RainbowActivity extends AppCompatActivity {
 
@@ -13,157 +19,52 @@ public class RainbowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rainbow_activity);
 
-        Bundle extras = getIntent().getExtras();
-        final String l = extras.getString("ButtonL");
-//        final String c = extras.getString("ButtonC");
-        final String r = extras.getString("ButtonR");
+        final BinarySearch bs = BinarySearch.getInstance();
+        Renderer rainbow = bs.getFrames().get(bs.getPathCounter());
 
-        ((Button) findViewById(R.id._buttonL)).setText(l);
-//        ((Button) findViewById(R.id._buttonC)).setText(c);
-        ((Button) findViewById(R.id._buttonR)).setText(r);
+        ((Button) findViewById(R.id._buttonLM1)).setText(rainbow.getSlm1());
+        ((Button) findViewById(R.id._buttonL)).setText(rainbow.getSl());
+        ((Button) findViewById(R.id._buttonLP1)).setText(rainbow.getSlp1());
 
-//        final Button _buttonLP2 = findViewById(R.id._buttonLP2);
-//        final Button _buttonP2 = findViewById(R.id._buttonP2);
-//        final Button _buttonRP2 = findViewById(R.id._buttonRP2);
-//
-//        final Button _buttonLP1 = findViewById(R.id._buttonLP1);
+        ((Button) findViewById(R.id._buttonP2)).setText(rainbow.getSp2());
+        ((Button) findViewById(R.id._buttonP1)).setText(rainbow.getSp1());
+        ((Button) findViewById(R.id._buttonC)).setText(rainbow.getSc());
+        ((Button) findViewById(R.id._buttonM1)).setText(rainbow.getSm1());
+        ((Button) findViewById(R.id._buttonM2)).setText(rainbow.getSm2());
+
+        ((Button) findViewById(R.id._buttonRP1)).setText(rainbow.getSrp1());
+        ((Button) findViewById(R.id._buttonR)).setText(rainbow.getSr());
+        ((Button) findViewById(R.id._buttonRM1)).setText(rainbow.getSrm1());
+
         final Button _buttonP1 = findViewById(R.id._buttonP1);
-//        final Button _buttonRP1 = findViewById(R.id._buttonRP1);
-
-        final Button _buttonL = findViewById(R.id._buttonL);
-//        final Button _buttonC = findViewById(R.id._buttonC);
-        final Button _buttonR = findViewById(R.id._buttonR);
-
-//        final Button _buttonLM1 = findViewById(R.id._buttonLM1);
         final Button _buttonM1 = findViewById(R.id._buttonM1);
-//        final Button _buttonRM1 = findViewById(R.id._buttonRM1);
-//
-//        final Button _buttonLM2 = findViewById(R.id._buttonLM2);
-//        final Button _buttonM2 = findViewById(R.id._buttonM2);
-//        final Button _buttonRM2 = findViewById(R.id._buttonRM2);
 
-//        _buttonLP2.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent activityChangeIntent =
-//                        new Intent(RainbowActivity.this, MainActivity.class);
-//                RainbowActivity.this.startActivity(activityChangeIntent);
-//            }
-//        });
-//
-//        _buttonP2.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent activityChangeIntent =
-//                        new Intent(RainbowActivity.this, MainActivity.class);
-//                RainbowActivity.this.startActivity(activityChangeIntent);
-//            }
-//        });
-//
-//        _buttonRP2.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent activityChangeIntent =
-//                        new Intent(RainbowActivity.this, MainActivity.class);
-//                RainbowActivity.this.startActivity(activityChangeIntent);
-//            }
-//        });
-//
-//        _buttonLP1.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent activityChangeIntent =
-//                        new Intent(RainbowActivity.this, MainActivity.class);
-//                RainbowActivity.this.startActivity(activityChangeIntent);
-//            }
-//        });
         _buttonP1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent activityChangeIntent =
-                        new Intent(RainbowActivity.this, MainActivity.class);
-                RainbowActivity.this.startActivity(activityChangeIntent);
+                if(bs.getPathCounter() == bs.getFrames().size() - 1) {
+                    Toast.makeText(getApplicationContext(), "Match", Toast.LENGTH_LONG).show();
+                } else if (bs.getFrames().get(bs.getPathCounter() + 1) instanceof Up){
+                    Intent activityChangeIntent =
+                            new Intent(RainbowActivity.this, MainActivity.class);
+                    RainbowActivity.this.startActivity(activityChangeIntent);
+                    startActivity(activityChangeIntent);
+                    bs.incrementPathCounter();
+                } else Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_LONG).show();
             }
         });
-
-//        _buttonRP1.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent activityChangeIntent =
-//                        new Intent(RainbowActivity.this, MainActivity.class);
-//                RainbowActivity.this.startActivity(activityChangeIntent);
-//            }
-//        });
-
-        _buttonL.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-//                if(l.equals("!=")) {
-                    Intent activityChangeIntent =
-                            new Intent(RainbowActivity.this, MainActivity.class);
-                    RainbowActivity.this.startActivity(activityChangeIntent);
-                }
-//            }
-        });
-
-//        _buttonC.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent activityChangeIntent =
-//                        new Intent(RainbowActivity.this, MainActivity.class);
-//                RainbowActivity.this.startActivity(activityChangeIntent);
-//            }
-//        });
-
-        _buttonR.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-//                if (r.equals("!=")) {
-                    Intent activityChangeIntent =
-                            new Intent(RainbowActivity.this, MainActivity.class);
-                    RainbowActivity.this.startActivity(activityChangeIntent);
-                }
-//            }
-        });
-
-//        _buttonLM1.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent activityChangeIntent =
-//                        new Intent(RainbowActivity.this, MainActivity.class);
-//                RainbowActivity.this.startActivity(activityChangeIntent);
-//            }
-//        });
-
         _buttonM1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent activityChangeIntent =
-                        new Intent(RainbowActivity.this, DownActivity.class);
-                RainbowActivity.this.startActivity(activityChangeIntent);
+                if(bs.getPathCounter() == bs.getFrames().size() - 1) {
+                    Toast.makeText(getApplicationContext(), "Match", Toast.LENGTH_LONG).show();
+                } else if (bs.getFrames().get(bs.getPathCounter() + 1) instanceof Down) {
+                    Intent activityChangeIntent =
+                            new Intent(RainbowActivity.this, DownActivity.class);
+                    RainbowActivity.this.startActivity(activityChangeIntent);
+                    startActivity(activityChangeIntent);
+                    bs.incrementPathCounter();
+                } else Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_LONG).show();
             }
         });
-
-//        _buttonRM1.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent activityChangeIntent =
-//                        new Intent(RainbowActivity.this, MainActivity.class);
-//                RainbowActivity.this.startActivity(activityChangeIntent);
-//            }
-//        });
-//
-//        _buttonLM2.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent activityChangeIntent =
-//                        new Intent(RainbowActivity.this, MainActivity.class);
-//                RainbowActivity.this.startActivity(activityChangeIntent);
-//            }
-//        });
-//
-//        _buttonM2.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent activityChangeIntent =
-//                        new Intent(RainbowActivity.this, MainActivity.class);
-//                RainbowActivity.this.startActivity(activityChangeIntent);
-//            }
-//        });
-//
-//        _buttonRM2.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                Intent activityChangeIntent =
-//                        new Intent(RainbowActivity.this, MainActivity.class);
-//                RainbowActivity.this.startActivity(activityChangeIntent);
-//            }
-//        });
     }
 }
 
