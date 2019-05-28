@@ -44,13 +44,11 @@ public class BinarySearch {
     private void search() {
         boolean flipper = false;
         frames.add(new Up(array, left, right, toFind));
-        while(left <= right) {
+        while(left <= right){
             int m = left + (right - left) / 2;
-            if (array[m] == toFind) {
-                if (flipper) frames.add(new Down(array, left, right, toFind));
-                else frames.add(new Left(array, left, right, toFind));
+            if (array[m] == toFind)
                 return;
-            } else if(toFind < array[m]) {
+            if(toFind < array[m]) {
                 right = m - 1;
                 if(flipper) frames.add(new Down(array, left, right, toFind));
                 else frames.add(new Left(array, left, right, toFind));
