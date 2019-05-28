@@ -15,6 +15,7 @@ import android.widget.Toast;
 import de.tanev.labyrinth.model.BinarySearch;
 import de.tanev.labyrinth.model.Renderer;
 import de.tanev.labyrinth.model.renderer.Left;
+import de.tanev.labyrinth.model.renderer.Right;
 
 public class MainActivity extends AppCompatActivity {
     @SuppressLint("ClickableViewAccessibility")
@@ -50,8 +51,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(bs.getPathCounter() == bs.getFrames().size() - 1) {
                     Toast.makeText(getApplicationContext(), "Match", Toast.LENGTH_LONG).show();
+                } else if (bs.getFrames().get(bs.getPathCounter() + 1) instanceof Right) {
+                    Intent activityChangeIntent =
+                            new Intent(MainActivity.this, RainbowActivity.class);
+                    startActivity(activityChangeIntent);
+                    bs.incrementPathCounter();
                 } else Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_LONG).show();
-
             }
         });
 
@@ -65,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(activityChangeIntent);
                     bs.incrementPathCounter();
                 } else Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_LONG).show();
-
             }
         });
     }
