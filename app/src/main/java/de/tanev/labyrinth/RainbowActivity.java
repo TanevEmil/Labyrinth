@@ -42,7 +42,10 @@ public class RainbowActivity extends AppCompatActivity {
         _buttonP1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if(bs.getPathCounter() == bs.getFrames().size() - 1) {
-                    Toast.makeText(getApplicationContext(), "Match", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Match!!!", Toast.LENGTH_LONG).show();
+                    BinarySearch.deleteInstance();                    Intent activityChangeIntent =
+                            new Intent(RainbowActivity.this, MainActivity.class);
+                    startActivity(activityChangeIntent);
                 } else if (bs.getFrames().get(bs.getPathCounter() + 1) instanceof Up){
                     Intent activityChangeIntent =
                             new Intent(RainbowActivity.this, MainActivity.class);
@@ -55,7 +58,11 @@ public class RainbowActivity extends AppCompatActivity {
         _buttonM1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if(bs.getPathCounter() == bs.getFrames().size() - 1) {
-                    Toast.makeText(getApplicationContext(), "Match", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Match!!!", Toast.LENGTH_LONG).show();
+                    BinarySearch.deleteInstance();
+                    Intent activityChangeIntent =
+                            new Intent(RainbowActivity.this, MainActivity.class);
+                    startActivity(activityChangeIntent);
                 } else if (bs.getFrames().get(bs.getPathCounter() + 1) instanceof Down) {
                     Intent activityChangeIntent =
                             new Intent(RainbowActivity.this, DownActivity.class);
@@ -65,6 +72,13 @@ public class RainbowActivity extends AppCompatActivity {
                 } else Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_LONG).show();
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 }
 

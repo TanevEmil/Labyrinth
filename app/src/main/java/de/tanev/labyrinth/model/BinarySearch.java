@@ -22,6 +22,10 @@ public class BinarySearch {
             bs = new BinarySearch();
         return bs;
     }
+    public static void deleteInstance(){
+        if(bs != null)
+            bs = null;
+    }
     private BinarySearch() {
         Random r = new Random();
         for (int i = 0; i < array.length; i++) {
